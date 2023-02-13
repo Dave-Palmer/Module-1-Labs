@@ -1,23 +1,31 @@
-
+* {box-sizing: border-box;
+margin: 0;
+text-align: center;
+}
 
 body {background-color: RGB(235, 187, 64);
+      font-family: sans-serif;
 }
 
 h1 {text-align: center;
     font-size: 50px;
     color: rgb(238, 204, 163);
-    
 }
- ul {padding-left: 0px;}
+
+img.beer {
+    width: 200px;
+    height: 150px;
+
+}
+
+ul {padding-left: 0px;}
 
 li {border: 1px solid black;
     display: inline-block;
-    max-width: fit-content;
     background-color: bisque;
     list-style-type: none;
     padding: 8px;
-    margin: 10px 10px 10px 0px;
-
+    margin: 10px 10px 10px 10px;
 }
 
 li:hover {
@@ -28,10 +36,16 @@ a  {text-decoration: none;
     color: brown;
 }
 
-p {font-style: italic; }
+a.wikilink:hover {
+    background-color: rgb(234, 161, 34);
+}
+
+p {font-style: italic; 
+   margin: 10px;
+}
 
 .form-select {background-color: bisque;}
 
-.butt {background-color: bisque;
+#butt {background-color: bisque;
        border-radius: 10px 10px 10px 10px;
 }
