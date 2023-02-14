@@ -4,6 +4,8 @@ const stout = document.querySelector('#stout')
 
 const option = document.querySelector("#selector")
 const button = document.querySelector("#butt")
+const expandButton = document.querySelector("#expand")
+const paragraph = document.querySelector(".hideme")
 
 let lagerScore = 0
 let ipaScore = 0
@@ -43,4 +45,9 @@ button.addEventListener('click', function (){
     else {
         console.log("pick an option")
     }
+})
+
+expandButton.addEventListener('click', function () {
+    paragraph.classList.toggle("show");
+
 })

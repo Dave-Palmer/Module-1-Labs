@@ -1,15 +1,29 @@
-* {box-sizing: border-box;
-margin: 0;
-padding: 0;
-text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-body {background-color: RGB(235, 187, 64);
-      font-family: sans-serif;
-
+body {
+    background-color: RGB(235, 187, 64);
+    font-family: sans-serif;
 }
 
-h1 {text-align: center;
+table {
+    display: inline-block;
+}
+table, th, td, tr {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
     font-size: 60px;
     color: rgb(238, 204, 163);
     letter-spacing: 10px;
@@ -21,46 +35,66 @@ img.beer {
     width: 200px;
     height: 150px;
     border-radius: 5px;
-
 }
 
-nav {margin: 0px;}
+nav {
+    margin: 0px;
+}
 
 ul {
     display: inline-block;
 }
 
-li {border: 1px solid black;
+li {
+    border: 1px solid black;
     border-radius: 10px;
     width: 400px;
     background-color: bisque;
     list-style-type: none;
     padding: 8px;
     margin: 10px 10px 10px 10px;
+    cursor: pointer;
 }
 
-li:hover {
+#expand {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: RGB(235, 187, 64) ;
+    border: none;
+    cursor: grabbing;
+}
+
+li:hover, .expand:hover, a.wikilink:hover  {
     background-color: rgb(234, 161, 34);
 }
 
-a  {text-decoration: none;
-    color: brown;
+a  {
+    text-decoration: none;
+    color: rgb(202, 130, 42);
 }
 
-a.wikilink:hover {
-    background-color: rgb(234, 161, 34);
+p {
+    font-style: italic; 
+    margin: 10px;
 }
 
-p {font-style: italic; 
-   margin: 10px;
+.hideme {
+    display: none ;
 }
 
-.form-select {background-color: bisque;}
+.show {
+    display: block;
+}
+.form-select {
+    background-color: bisque;
+}
 
-#butt {background-color: bisque;
-       border-radius: 10px 10px 10px 10px;
-       padding: 5px;
-       font-size: 15px;
+#butt {
+    background-color: bisque;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    font-size: 15px;
 }
 
 footer {
