@@ -17,10 +17,26 @@ h1 {text-align: center;
     -webkit-text-stroke-color: black;
 }
 
+
+
 img.beer {
     width: 200px;
     height: 150px;
-    border-radius: 5px;
+    border-radius: 10px ;
+
+}
+
+.beer {
+    position: relative;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes anim {
+    50%   {border-radius: 50px;}
 
 }
 
@@ -61,6 +77,12 @@ p {font-style: italic;
        border-radius: 10px 10px 10px 10px;
        padding: 5px;
        font-size: 15px;
+}
+
+#butt:active {
+    transform: translateY(3px);
+    background-color:  rgb(234, 161, 34);
+    box-shadow: 0 3px white;
 }
 
 footer {
