@@ -40,6 +40,21 @@ img.beer {
 
 }
 
+.beer {
+    position: relative;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes anim {
+    50%   {border-radius: 50px;}
+
+}
+
+
 nav {
     margin: 0px;
 }
